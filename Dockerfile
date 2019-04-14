@@ -16,8 +16,8 @@ RUN npm install
 # Bundle your app's source code inside the Docker image
 COPY . .
 
-# Map docker deamon to specific - also used in server.js
-EXPOSE 8080
+# Map docker deamon to specific
+EXPOSE 4000
 
 # Define the command to run your app which defines your runtime, like 'npm start'
 CMD [ "npm", "start" ]
